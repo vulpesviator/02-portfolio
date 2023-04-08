@@ -62,11 +62,23 @@ nav ul {
     min-width: 6em;
 }
 
-nav li {
+nav li a {
     font-family: 'Interstate', monospace;
     font-weight: 400;
     font-size: 1.25em;
     text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5em;
+}
+
+nav li a:hover {
+    border-bottom: 8px solid #3f3;
+    color: #3f3;
+    text-decoration: none;
+}
+
+aside {
+    flex: 1;
 }
 
 main {
@@ -81,8 +93,14 @@ footer {
     padding: 2em;
 }
 
+#about-me {
+    /* flex: 1; */
+    border: 2px dashed #3f3;
+}
+
 #contact-info {
-    flex: 1;
+    /* flex: 1; */
+    border: 2px dashed #3f3;
 }
 
 #works {
@@ -121,7 +139,7 @@ footer {
         flex-direction: column;
     }
 
-    #contact-info {
+    aside {
         order: 2;
     }
 
