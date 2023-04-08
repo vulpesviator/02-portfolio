@@ -50,6 +50,12 @@ header {
     border: 1px solid #222;
 }
 
+header .logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
 h1 {
     font-family: "Avant Garde", Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -62,9 +68,27 @@ nav ul {
     min-width: 6em;
 }
 
-nav li {
+nav li a {
     font-family: 'Interstate', monospace;
+    font-weight: 400;
+    font-size: 1.25em;
     text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5em;
+}
+
+nav li a:hover {
+    border-bottom: 8px solid #3f3;
+    color: #3f3;
+    text-decoration: none;
+}
+
+aside {
+    flex: 1;
+}
+
+section {
+    flex: 4;
 }
 
 main {
@@ -79,12 +103,17 @@ footer {
     padding: 2em;
 }
 
+#about-me {
+    /* flex: 1; */
+    border: 2px dashed #3f3;
+}
+
 #contact-info {
-    flex: 1;
+    /* flex: 1; */
+    border: 2px dashed #3f3;
 }
 
 #works {
-    flex: 4;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -106,8 +135,8 @@ footer {
 .project h2 {
     position: absolute;
     display: inline-block;
-    left: 0;
-    bottom: 0;
+    right: 10px;
+    bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -117,6 +146,10 @@ footer {
 
     main, nav {
         flex-direction: column;
+    }
+
+    aside {
+        order: 2;
     }
 
     .project {
