@@ -42,6 +42,13 @@
     margin: 0.5em;
 }
 
+body {
+    background: url(/assets/imgs/seamless_paper_texture.jpg);
+    background-color: transparent;
+    background-size: 20%;
+    background-repeat: repeat;
+}
+
 header {
     display: flex;
     justify-content: space-between;
