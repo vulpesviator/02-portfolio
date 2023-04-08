@@ -1,3 +1,48 @@
+@font-face {
+    font-family: "Interstate";
+    src: url(/assets/fonts/Interstate\ Cond\ Mono.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Interstate";
+    src: url(/assets/fonts/Interstate\ Cond\ Mono\ -\ Blk.ttf) format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Avant Garde";
+    src: url(/assets/fonts/AvantGardeBQ-Bold.otf) format('opentype');
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "Avant Garde";
+    src: url(/assets/fonts/AvantGardeBQ-Book.otf) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Avant Garde";
+    src: url(/assets/fonts/AvantGardeBQ-ExtraLight.otf) format('opentype');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Avant Garde";
+    src: url(/assets/fonts/AvantGardeBQ-Medium.otf) format('opentype');
+    font-weight: bold;
+}
+
+
+
 * {
-    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: "Avant Garde", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3em;
 }
