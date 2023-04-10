@@ -527,10 +527,6 @@ footer p {
         flex-direction: column;
     }
 
-    #works {
-        
-    }
-
     #project {
         width: 100%;
         flex: 2 1 100%;
