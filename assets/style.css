@@ -55,7 +55,7 @@ header {
     align-items: center;
     margin: 1em;
     padding: 1.6em;
-    border: 1px solid #fff;
+    border: 2px dashed #fff;
 }
 
 header .logo {
@@ -88,18 +88,19 @@ h3 {
     font-size: 1.5em;
     color: #fff;
     padding: .5em;
+    border-bottom: 1px dashed #01B6D4;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
-    min-width: 6em;
 }
 
 nav li a {
     font-family: 'Interstate', monospace;
     font-weight: 400;
     font-size: 1.25em;
+    letter-spacing: .15em;
     text-transform: uppercase;
     text-decoration: none;
     padding: 2em;
@@ -107,7 +108,7 @@ nav li a {
 }
 
 nav li a:hover {
-    border-bottom: 8px solid #3f3;
+    border-bottom: 4px solid #01B6D4;
     color: #000;
     background-color: #fff;
     text-decoration: none;
@@ -128,50 +129,65 @@ main {
 }
 
 footer {
-    font-family: 'Interstate', monospace;
     text-align: center;
-    background: #ccc;
+    color: #ccc;
     padding: 2em;
     margin: 1em;
+    border-top: 1px dashed #ccc;
+}
+
+footer p {
+    font-family: 'Interstate', monospace;
+    font-weight: 400;
+    font-size: .75em;
+    text-transform: uppercase;
+    letter-spacing: .25em;
 }
 
 #about-me {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 2px dashed #3f3;
     padding: .5em;
     margin: 1em;
 }
 
 #contact-info {
-    /* flex: 1; */
-    border: 2px dashed #3f3;
     padding: 1em;
 }
 
 #contact-info li {
-    color: #fff;
+    font-family: 'Interstate', monospace;
+    font-weight: 900;
+    font-size: 1.25em;
+    letter-spacing: .15em;
+    text-transform: uppercase;
     padding: 0.5em 0;
 }
 
 #contact-info a {
     display: flex;
     text-decoration: none;
-    color: #3f3;
+    color: #fff;
     align-items: center;
     justify-content: flex-start;
     padding: .5em;
 }
 
+#contact-info a:hover {
+    background: #fff;
+    color: #333;
+}
+
 #contact-info a svg {
+    fill: #fff;
     -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 	transition: 1s;
 }
 
-#contact-info a svg:hover {
-    background: #fff;
+#contact-info a:hover svg {
+    background: #333;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -190,7 +206,26 @@ footer {
     align-items: center;
     padding: 0.5em;
     margin: 0.5em;
-    border: #3f3 solid 2px;
+    transition: .5s;
+}
+
+#project:hover {
+    transform: scale(102%);
+    border: 2px dashed #fff;
+}
+
+#project:hover .description {
+    background: #fff;
+    border-bottom: #01B6D4 solid 4px;
+    box-shadow: #000 2px 2px 4px;
+}
+
+#project:hover .description h2 {
+    color: #333;
+}
+
+#project:hover .description p {
+    color: #333;
 }
 
 #project:nth-child(1) {
@@ -198,7 +233,7 @@ footer {
 }
 
 #project-1 {
-    background: url(https://www.kotaku.com.au/wp-content/uploads/sites/3/2019/08/control-final-4.jpg);
+    background: url(https://picsum.photos/1920/1080);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -215,7 +250,7 @@ footer {
 }
 
 #project-2 {
-    background: url(https://www.kotaku.com.au/wp-content/uploads/sites/3/2019/08/control-final-4.jpg);
+    background: url(https://picsum.photos/1920/1080);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -232,7 +267,7 @@ footer {
 }
 
 #project-3 {
-    background: url(https://www.kotaku.com.au/wp-content/uploads/sites/3/2019/08/control-final-4.jpg);
+    background: url(https://picsum.photos/1920/1080);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -249,7 +284,7 @@ footer {
 }
 
 #project-4 {
-    background: url(https://www.kotaku.com.au/wp-content/uploads/sites/3/2019/08/control-final-4.jpg);
+    background: url(https://picsum.photos/1920/1080);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -266,7 +301,7 @@ footer {
 }
 
 #project-5 {
-    background: url(https://www.kotaku.com.au/wp-content/uploads/sites/3/2019/08/control-final-4.jpg);
+    background: url(https://picsum.photos/1920/1080);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -287,14 +322,20 @@ footer {
     display: inline-block;
     right: 40px;
     bottom: 6px;
-    padding-bottom: 30px;
-    border-bottom: #3f3 dashed 2px;
+    padding: 24px;
+    background: #333;
+}
+
+.description h2 {
     color: #fff;
-    text-shadow: #333 1px 1px 2px;
+
 }
 
 .description p {
     font-family: 'Interstate', monospace;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #fff;
 }
 
 .avatar {
@@ -308,16 +349,20 @@ footer {
     color: #fff;
 }
 
+.bio p {
+    margin: .5em;
+    padding-top: .5em;
+}
+
 .avatar img {
-    /* border-radius: 50%; */
     max-width: 250px;
 	margin: 20px;
 	-webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-	transition: 1s;
+	transition: .5s;
 }
 
-.avatar img:hover {
+#about-me:hover .avatar img {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -325,7 +370,6 @@ footer {
 .icon {
     max-width: 32px;
     max-height: 32px;
-    fill: #3f3;
     margin-right: 1em;
 	transition: .5s;
 }
@@ -338,7 +382,9 @@ footer {
     }
 
     nav {
+        display: flex;
         margin: 1em;
+        
     }
 
     nav ul {
@@ -367,7 +413,17 @@ footer {
         flex-direction: column;
     }
 
-    main, nav {
+    header .logo svg {
+        max-width: 120px;
+        max-height: 120px;
+        filter: invert(0);
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
         flex-direction: column;
     }
 
