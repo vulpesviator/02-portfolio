@@ -36,6 +36,13 @@
 }
 
 /* Styles begin for Content */
+:root {
+    --white: #f9f9f9;
+    --black: #191919;
+    --blue: #01B6D4;
+    --orange: #fe7102;
+}
+
 * {
     box-sizing: content-box;
     font-family: "Avant Garde", Arial, Helvetica, sans-serif;
@@ -55,7 +62,7 @@ header {
     align-items: center;
     margin: 1em;
     padding: 1.6em;
-    border: 2px dashed #fff;
+    border: 2px dashed var(--white);
 }
 
 header .logo {
@@ -75,18 +82,18 @@ header .logo svg {
 h1 {
     font-weight: bold;
     font-size: 3em;
-    color: #fff;
+    color: var(--white);
 }
 
 h2 {
     font-size: 2em;
     line-height: 1.5em;
-    color: #fff;
+    color: var(--white);
 }
 
 h3 {
     font-size: 1.5em;
-    color: #fff;
+    color: var(--white);
     padding: .5em;
     border-bottom: 1px dashed #01B6D4;
 }
@@ -104,13 +111,13 @@ nav li a {
     text-transform: uppercase;
     text-decoration: none;
     padding: 2em;
-    color: #fff;
+    color: var(--white);
 }
 
 nav li a:hover {
     border-bottom: 4px solid #01B6D4;
-    color: #191919;
-    background-color: #fff;
+    color: var(--black);
+    background-color: var(--white);
     text-decoration: none;
 }
 
@@ -168,26 +175,26 @@ footer p {
 #contact-info a {
     display: flex;
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     align-items: center;
     justify-content: flex-start;
     padding: .5em;
 }
 
 #contact-info a:hover {
-    background: #fff;
-    color: #333;
+    background: var(--white);
+    color: var(--black);
 }
 
 #contact-info a svg {
-    fill: #fff;
+    fill: var(--white);
     -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 	transition: 1s;
 }
 
 #contact-info a:hover svg {
-    background: #333;
+    background: var(--black);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -211,21 +218,21 @@ footer p {
 
 #project:hover {
     transform: scale(102%);
-    border: 2px dashed #fff;
+    border: 2px dashed var(--white);
 }
 
 #project:hover .description {
-    background: #fff;
+    background: var(--white);
     border-bottom: #01B6D4 solid 4px;
-    box-shadow: #191919 2px 2px 4px;
+    box-shadow: var(--black) 2px 2px 4px;
 }
 
 #project:hover .description h2 {
-    color: #191919;
+    color: var(--black);
 }
 
 #project:hover .description p {
-    color: #191919;
+    color: var(--black);
 }
 
 #project:nth-child(1) {
@@ -323,11 +330,11 @@ footer p {
     right: 40px;
     bottom: 6px;
     padding: 24px;
-    background: #191919;
+    background: var(--black);
 }
 
 .description h2 {
-    color: #fff;
+    color: var(--white);
 
 }
 
@@ -335,7 +342,7 @@ footer p {
     font-family: 'Interstate', monospace;
     text-transform: uppercase;
     letter-spacing: .1em;
-    color: #fff;
+    color: var(--white);
 }
 
 .avatar {
@@ -346,7 +353,7 @@ footer p {
 .bio {
     display: inline-block;
     flex: 10;
-    color: #fff;
+    color: var(--white);
 }
 
 .bio p {
@@ -378,7 +385,7 @@ footer p {
 
 @media screen and (max-width: 768px) {
     body {
-        background: #fff; 
+        background: var(--white); 
         background-size: 20%;
         background-repeat: repeat;
     }
@@ -386,7 +393,7 @@ footer p {
     header {
         flex-direction: column;
         padding: 1.5em;
-        border: 2px dashed #333;
+        border: 2px dashed var(--black);
     }
 
     header .logo svg {
@@ -394,12 +401,12 @@ footer p {
     }
 
     h1 {
-        color: #191919;
+        color: var(--black);
     }
 
     h3 {
-        color: #191919;
-        border-bottom: 2px dashed #191919;
+        color: var(--black);
+        border-bottom: 2px dashed var(--black);
     }
 
     main {
@@ -419,7 +426,7 @@ footer p {
     }
 
     nav li a {
-        color: #191919;
+        color: var(--black);
         padding: 1.25em;
     }
 
@@ -441,16 +448,16 @@ footer p {
     }
 
     #contact-info li div {
-        border: 2px dashed #FE7102;
+        border: 2px dashed var(--orange);
     }
 
     #contact-info a {
         width: 100%;
-        color: #FE7102;
+        color: var(--orange);
     }
 
     #contact-info a svg {
-        fill: #FE7102;
+        fill: var(--orange);
     }
 
     .icon {
@@ -468,16 +475,16 @@ footer p {
         right: 18px;
         bottom: 6px;
         padding: 24px;
-        background: #fff;
+        background: var(--white);
     }
     
     .description h2 {
-        color: #191919;
+        color: var(--black);
     
     }
     
     .description p {
-        color: #191919;
+        color: var(--black);
     }
 
     .avatar img {
@@ -486,7 +493,7 @@ footer p {
     }
 
     .bio p {
-        color: #191919;
+        color: var(--black);
         font-size: 1em;
         font-weight: bold;
     }
@@ -507,7 +514,19 @@ footer p {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul a {
+        padding: .25em;
+        letter-spacing: .1em;
+    }
+
+    nav li:not(:last-child) {
+        border-right: 1px solid var(--black);
+        padding: 0 8px;
     }
 
     main {
