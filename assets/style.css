@@ -60,8 +60,16 @@ header {
 
 header .logo {
     display: flex;
+    flex: 2 1 50%;
     align-items: center;
     margin: 0;
+}
+
+header .logo svg {
+    max-width: 72px;
+    max-height: 72px;
+    margin-right: 2em;
+    filter: invert(1)
 }
 
 h1 {
@@ -79,6 +87,7 @@ h2 {
 h3 {
     font-size: 1.5em;
     color: #fff;
+    padding: .5em;
 }
 
 nav ul {
@@ -144,6 +153,27 @@ footer {
 #contact-info li {
     color: #fff;
     padding: 0.5em 0;
+}
+
+#contact-info a {
+    display: flex;
+    text-decoration: none;
+    color: #3f3;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .5em;
+}
+
+#contact-info a svg {
+    -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+	transition: 1s;
+}
+
+#contact-info a svg:hover {
+    background: #fff;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 #works {
@@ -279,8 +309,28 @@ footer {
 }
 
 .avatar img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    max-width: 250px;
+	margin: 20px;
+	-webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+	transition: 1s;
 }
+
+.avatar img:hover {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.icon {
+    max-width: 32px;
+    max-height: 32px;
+    fill: #3f3;
+    margin-right: 1em;
+	transition: .5s;
+}
+
+
 
 @media screen and (max-width: 768px) {
     header {
