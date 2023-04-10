@@ -109,7 +109,7 @@ nav li a {
 
 nav li a:hover {
     border-bottom: 4px solid #01B6D4;
-    color: #000;
+    color: #191919;
     background-color: #fff;
     text-decoration: none;
 }
@@ -217,15 +217,15 @@ footer p {
 #project:hover .description {
     background: #fff;
     border-bottom: #01B6D4 solid 4px;
-    box-shadow: #000 2px 2px 4px;
+    box-shadow: #191919 2px 2px 4px;
 }
 
 #project:hover .description h2 {
-    color: #333;
+    color: #191919;
 }
 
 #project:hover .description p {
-    color: #333;
+    color: #191919;
 }
 
 #project:nth-child(1) {
@@ -323,7 +323,7 @@ footer p {
     right: 40px;
     bottom: 6px;
     padding: 24px;
-    background: #333;
+    background: #191919;
 }
 
 .description h2 {
@@ -377,13 +377,40 @@ footer p {
 
 
 @media screen and (max-width: 768px) {
+    body {
+        background: #fff; 
+        background-size: 20%;
+        background-repeat: repeat;
+    }
+    
     header {
+        flex-direction: column;
+        padding: 1.5em;
+        border: 2px dashed #333;
+    }
+
+    header .logo svg {
+        filter: invert(0);
+    }
+
+    h1 {
+        color: #191919;
+    }
+
+    h3 {
+        color: #191919;
+        border-bottom: 2px dashed #191919;
+    }
+
+    main {
+        width: 100%;
         flex-direction: column;
     }
 
     nav {
         display: flex;
-        margin: 1em;
+        flex: 1 0 100%;
+        margin: 2em;
         
     }
 
@@ -392,19 +419,76 @@ footer p {
     }
 
     nav li a {
-        padding: 2em;
-    }
-
-    main, nav {
-        flex-direction: column;
+        color: #191919;
+        padding: 1.25em;
     }
 
     aside {
         order: 2;
     }
 
+    header .logo {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact-info ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2em;
+    }
+
+    #contact-info li div {
+        border: 2px dashed #FE7102;
+    }
+
+    #contact-info a {
+        width: 100%;
+        color: #FE7102;
+    }
+
+    #contact-info a svg {
+        fill: #FE7102;
+    }
+
+    .icon {
+        width: 3em;
+        max-width: 400px;
+        max-height: 400px;
+        margin-right: .6em;
+    }
+
     .project {
         flex: 2 1 100%;
+    }
+
+    .description {
+        right: 18px;
+        bottom: 6px;
+        padding: 24px;
+        background: #fff;
+    }
+    
+    .description h2 {
+        color: #191919;
+    
+    }
+    
+    .description p {
+        color: #191919;
+    }
+
+    .avatar img {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .bio p {
+        color: #191919;
+        font-size: 1em;
+        font-weight: bold;
     }
 }
 
@@ -416,7 +500,10 @@ footer p {
     header .logo svg {
         max-width: 120px;
         max-height: 120px;
-        filter: invert(0);
+    }
+
+    h3 {
+        text-align: right;
     }
 
     nav ul {
@@ -431,7 +518,28 @@ footer p {
         order: 2;
     }
 
-    .project {
+    #contact-info ul {
+        flex-direction: column;
+    }
+
+    #about-me {
+        position: relative;
+        flex-direction: column;
+    }
+
+    #project {
+        width: 100%;
         flex: 2 1 100%;
+    }
+
+    .avatar img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0 0 0 1em;
+    }
+
+    .bio {
+        margin-top: 5.25em;
     }
 }
