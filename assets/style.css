@@ -46,7 +46,7 @@
 * {
     box-sizing: content-box;
     font-family: "Avant Garde", Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     
 }
 
@@ -240,10 +240,10 @@ footer p {
 }
 
 #project-1 {
-    background: url(https://picsum.photos/1920/1080);
+    background: url(/assets/imgs/project-1-screenshot.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     display: block;
     width: 100%;
     min-height: 500px;
@@ -357,6 +357,7 @@ footer p {
 }
 
 .bio p {
+    font-weight: bold;
     margin: .5em;
     padding-top: .5em;
 }
@@ -500,6 +501,10 @@ footer p {
 }
 
 @media screen and (max-width: 576px) {
+    * {
+        font-size: 12px;
+    }
+    
     header {
         flex-direction: column;
     }
@@ -553,12 +558,13 @@ footer p {
 
     .avatar img {
         position: absolute;
-        top: 0;
+        top: 1em;
         left: 0;
         margin: 0 0 0 1em;
+        max-width: 180px;
     }
 
     .bio {
-        margin-top: 5.25em;
+        margin-top: 8em;
     }
 }
