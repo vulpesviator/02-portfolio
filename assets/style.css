@@ -1,37 +1,37 @@
 /* Custom fonts found in /assets/fonts folder */
 @font-face {
     font-family: "Interstate";
-    src: url(/assets/fonts/Interstate\ Cond\ Mono.ttf) format('truetype');
+    src: url(./assets/fonts/Interstate\ Cond\ Mono.ttf) format('truetype');
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Interstate";
-    src: url(/assets/fonts/Interstate\ Cond\ Mono\ -\ Blk.ttf) format('truetype');
+    src: url(./assets/fonts/Interstate\ Cond\ Mono\ -\ Blk.ttf) format('truetype');
     font-weight: 900;
 }
 
 @font-face {
     font-family: "Avant Garde";
-    src: url(/assets/fonts/AvantGardeBQ-Bold.otf) format('opentype');
+    src: url(./assets/fonts/AvantGardeBQ-Bold.otf) format('opentype');
     font-weight: bolder;
 }
 
 @font-face {
     font-family: "Avant Garde";
-    src: url(/assets/fonts/AvantGardeBQ-Book.otf) format('opentype');
+    src: url(./assets/fonts/AvantGardeBQ-Book.otf) format('opentype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Avant Garde";
-    src: url(/assets/fonts/AvantGardeBQ-ExtraLight.otf) format('opentype');
+    src: url(./assets/fonts/AvantGardeBQ-ExtraLight.otf) format('opentype');
     font-weight: lighter;
 }
 
 @font-face {
     font-family: "Avant Garde";
-    src: url(/assets/fonts/AvantGardeBQ-Medium.otf) format('opentype');
+    src: url(./assets/fonts/AvantGardeBQ-Medium.otf) format('opentype');
     font-weight: bold;
 }
 
@@ -51,7 +51,7 @@
 }
 
 body {
-    background-image: url(/assets/imgs/seamless_paper_texture_dark.jpg); 
+    background-image: url(./assets/imgs/seamless_paper_texture_dark.jpg); 
     background-size: 20%;
     background-repeat: repeat;
 }
@@ -240,7 +240,7 @@ footer p {
 }
 
 #project-1 {
-    background: url(/assets/imgs/project-1-screenshot.png);
+    background: url(./assets/imgs/project-1-screenshot.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
