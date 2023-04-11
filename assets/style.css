@@ -384,7 +384,7 @@ footer p {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     body {
         background: var(--white); 
         background-size: 20%;
