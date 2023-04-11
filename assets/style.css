@@ -1,37 +1,37 @@
 /* Custom fonts found in /assets/fonts folder */
 @font-face {
     font-family: "Interstate";
-    src: url(./assets/fonts/Interstate\ Cond\ Mono.ttf) format('truetype');
+    src: url(./fonts/Interstate\ Cond\ Mono.ttf) format('truetype');
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Interstate";
-    src: url(./assets/fonts/Interstate\ Cond\ Mono\ -\ Blk.ttf) format('truetype');
+    src: url(./fonts/Interstate\ Cond\ Mono\ -\ Blk.ttf) format('truetype');
     font-weight: 900;
 }
 
 @font-face {
     font-family: "Avant Garde";
-    src: url(./assets/fonts/AvantGardeBQ-Bold.otf) format('opentype');
+    src: url(./fonts/AvantGardeBQ-Bold.otf) format('opentype');
     font-weight: bolder;
 }
 
 @font-face {
     font-family: "Avant Garde";
-    src: url(./assets/fonts/AvantGardeBQ-Book.otf) format('opentype');
+    src: url(./fonts/AvantGardeBQ-Book.otf) format('opentype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Avant Garde";
-    src: url(./assets/fonts/AvantGardeBQ-ExtraLight.otf) format('opentype');
+    src: url(./fonts/AvantGardeBQ-ExtraLight.otf) format('opentype');
     font-weight: lighter;
 }
 
 @font-face {
     font-family: "Avant Garde";
-    src: url(./assets/fonts/AvantGardeBQ-Medium.otf) format('opentype');
+    src: url(./fonts/AvantGardeBQ-Medium.otf) format('opentype');
     font-weight: bold;
 }
 
@@ -51,7 +51,7 @@
 }
 
 body {
-    background-image: url(./assets/imgs/seamless_paper_texture_dark.jpg); 
+    background: url(./imgs/seamless_paper_texture_dark.jpg), var(--black); 
     background-size: 20%;
     background-repeat: repeat;
 }
@@ -207,7 +207,7 @@ footer p {
 
 #project {
     position: relative;
-    flex: 1 0 47%;
+    flex: 1 0 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,11 +236,11 @@ footer p {
 }
 
 #project:nth-child(1) {
-    flex: 2 1 100%;
+    flex: 2 1 95%;
 }
 
 #project-1 {
-    background: url(./assets/imgs/project-1-screenshot.png);
+    background: url(./imgs/project-1-screenshot.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
