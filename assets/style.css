@@ -240,7 +240,7 @@ footer p {
 }
 
 #project-1 {
-    background: url(./imgs/project-1-screenshot.png);
+    background: url(./imgs/zen-4-you.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -257,7 +257,7 @@ footer p {
 }
 
 #project-2 {
-    background: url(https://picsum.photos/1920/1080);
+    background: url(./imgs/code-quiz.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -274,7 +274,7 @@ footer p {
 }
 
 #project-3 {
-    background: url(https://picsum.photos/1920/1080);
+    background: url(./imgs/travelcast.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
